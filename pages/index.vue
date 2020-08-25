@@ -36,6 +36,7 @@ export default {
     Logo
   },
   asyncData (context) {
+    console.log(`component query params: ${Object.keys(context.query)}`);
     console.log(`axios headers: ${Object.keys(context.app.$axios.defaults.headers.common)}`);
     context.app.$axios.get('http://example.com');
   }

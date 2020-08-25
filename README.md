@@ -21,5 +21,5 @@ $ NODE_ENV=production npm run generate
 $ NODE_ENV=production npm run start
 ```
 
-If you request to `http://localhost:3000?foo=bar`, the query param object (`context.query`) given to the headermiddleware has an empty object, instead of the query params from the current request.
+If you request to `http://localhost:3000?foo=bar`, the query param object (`context.query`) given to the header middleware is an empty object, instead of the query params from the current request.
 
